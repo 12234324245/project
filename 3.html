@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #5EFCE8 10%, #736EFE 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            color: #FFFFFF;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            animation: appear 1s ease-in-out forwards;
+        }
+        @keyframes appear {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #EAF0F1;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #F7F6F2;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background-color: #736EFE;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        .icon img {
+            width: 60px;
+            height: 60px;
+        }
+<link rel="stylesheet" href="styles.css">
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="icon">
+        <img src="https://imgs.search.brave.com/hO6j6XHqNMkumlQuhRQ801V7rkf_7JJoC9lNlTjTo88/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzUzLzc5Lzk1/LzM2MF9GXzU1Mzc5/OTU1MF9WN3hBOTVm/ZDBVeWdGR29UMWlG/RzNWaHhoclNYZ1hw/NS5qcGc" alt="Thank You">
+    </div>
+    <h1>Thank You!</h1>
+    <p>Your submission has been received.</p>
+</div>
+
+</body>
+</html>

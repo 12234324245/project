@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            animation: changeBackground 20s infinite alternate;
+            background-color: #f2f2f2;
+        }
+
+        @keyframes changeBackground {
+            0% {
+                background-color: #f2f2f2; /* Initial color */
+            }
+            25% {
+                background-color: #ffcccc; /* Intermediate color 1 */
+            }
+            50% {
+                background-color: #ffd966; /* Intermediate color 2 */
+            }
+            75% {
+                background-color: #80d4ff; /* Intermediate color 3 */
+            }
+            100% {
+                background-color: #f2f2f2; /* Final color */
+            }
+        }
+
+        .heading-container {
+            background-color: #ff8c00;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .heading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="number"] {
+            width: calc(100% - 40px);
+            padding: 15px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        label {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="heading-container">
+    <h1 class="heading">Free Service</h1>
+</div>
+
+<div class="container">
+    <form id="restaurant_form" action="3.html" method="post">
+        <label for="restaurant_name">Restaurant Name:</label><br>
+        <input type="text" id="restaurant_name" name="restaurant_name" required><br>
+        <label for="food_name">Food Name:</label><br>
+        <input type="text" id="food_name" name="food_name" required><br>
+        <label for="food_time">Time of Food Preparation (in minutes):</label><br>
+        <input type="number" id="food_time" name="food_time" required><br>
+        <label for="shelf_life">Shelf Life (in days):</label><br>
+        <input type="number" id="shelf_life" name="shelf_life" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background: linear-gradient(270deg, #6a11cb, #2575fc, #2575fc, #6a11cb);
+            background-size: 800% 800%;
+            animation: AnimationName 20s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        
+        @keyframes AnimationName { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            backdrop-filter: blur(10px); /* Blur effect for the background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Deeper shadow for more depth */
+            width: 100%;
+            max-width: 360px;
+            animation: scaleUp 0.5s ease-in-out;
+        }
+        
+        @keyframes scaleUp {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #2575fc;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #2575fc;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #1a5bd9;
+        }
+
+        input:focus {
+            border-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form id="login_form" action="2.html">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
